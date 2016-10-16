@@ -134,7 +134,7 @@ a {
   display: inline-block;
   width: 18px;
   height: 26px;
-  background: url(../img/icon.png) no-repeat;
+  background: url("../img/icon.png") no-repeat;
   position: relative;
   top: 5px;
   *top: 0;
@@ -197,7 +197,7 @@ a {
   display: inline-block;
   width: 25px;
   height: 26px;
-  background: url(../img/icon.png) no-repeat -21px 0;
+  background: url("../img/icon.png") no-repeat -21px 0;
   margin-right: 18px;
   position: relative;
   top: 5px;
@@ -229,7 +229,7 @@ a {
   position: relative;
   top: 5px;
   *top: 0;
-  background: url(../img/icon.png) no-repeat -49px 0;
+  background: url("../img/icon.png") no-repeat -49px 0;
   width: 25px;
   height: 25px;
   margin-right: 15px;
@@ -385,5 +385,154 @@ a {
   color: #fff;
   background: #da9f1e;
   border: none;
+}
+.form_bg {
+  background-color: #e40d0d;
+}
+.form_bg .footer {
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.form_box {
+  position: relative;
+  width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.form_login_box {
+  background: url("../img/login_bg.jpg") no-repeat center top;
+  height: 860px;
+}
+.form_sign_box {
+  background: url("../img/sign_bg.jpg") no-repeat center top;
+  height: 1082px;
+}
+.form_winpop {
+  background: url("../img/winpop_bg.png");
+  border: 1px solid #b27f13;
+  overflow: hidden;
+}
+.login_box {
+  margin: 125px 0 0 595px;
+  width: 358px;
+}
+.login_box .login_winpop {
+  height: 268px;
+}
+.login_box .login_winpop ul li {
+  width: 100%;
+  margin-bottom: 16px;
+  position: relative;
+}
+.login_box .login_winpop ul li input {
+  background-color: #fff;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 12%;
+  border: none;
+  width: 88%;
+}
+.login_box .login_winpop ul li i {
+  position: absolute;
+  display: block;
+  background: url("../img/icon.png") no-repeat -79px 0;
+  left: 13px;
+  top: 13px;
+}
+.login_box .login_winpop ul li i.user_icon {
+  width: 14px;
+  height: 14px;
+}
+.login_box .login_winpop ul li i.pwd_icon {
+  width: 13px;
+  height: 15px;
+  background-position: -95px 0;
+}
+.this_form_btn {
+  width: 100%;
+  height: 45px;
+  color: #fff;
+  background-color: #e40d0d;
+  border: none;
+  margin-top: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.login_other {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+.login_other a {
+  color: #fff;
+}
+.login_other a.sign_href {
+  color: #fffc00;
+}
+.login_tit,
+.sign_tit {
+  text-align: center;
+  height: 50px;
+  color: #572813;
+  font-size: 24px;
+}
+.login_padding {
+  padding: 30px 30px 0;
+  overflow: hidden;
+}
+.service {
+  font-size: 18px;
+  color: #572813;
+  margin: 130px 0 0 798px;
+}
+.sign_box {
+  margin: 300px auto 0;
+  width: 538px;
+}
+.sign_box .sign_tit {
+  text-align: left;
+}
+.sign_box .sign_winpop {
+  height: 645px;
+}
+.sign_box .sign_winpop ul li {
+  width: 100%;
+  margin-bottom: 23px;
+  *margin-bottom: 20px;
+  float: left;
+  position: relative;
+  zoom: 1;
+}
+.sign_box .sign_winpop ul li input {
+  background-color: #fff;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 0 0 3%;
+  border: 1px solid #d1d1d1;
+  width: 97%;
+}
+.sign_box .sign_winpop ul li .code_btn {
+  width: 98px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  background-color: #e40d0d;
+  font-size: 14px;
+  position: absolute;
+  right: 2px;
+  top: 5px;
+  display: block;
+}
+.sign_box .sign_winpop .this_form_btn {
+  overflow: hidden;
+  width: 160px;
+  margin: 10px 0 0 103px;
+}
+.sign_padding {
+  padding: 30px 87px 0;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
