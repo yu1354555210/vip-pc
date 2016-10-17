@@ -505,7 +505,8 @@ a {
   position: relative;
   zoom: 1;
 }
-.sign_box .sign_winpop ul li input {
+.sign_box .sign_winpop ul li input[type="text"],
+.sign_box .sign_winpop ul li input[type="password"] {
   background-color: #fff;
   height: 38px;
   line-height: 38px;
@@ -521,15 +522,14 @@ a {
 .code_btn {
   width: 98px;
   height: 32px;
-  line-height: 32px;
-  text-align: center;
+  border: none;
   color: #fff;
   background-color: #e40d0d;
   font-size: 14px;
   position: absolute;
   right: 2px;
-  top: 5px;
-  display: block;
+  top: 4px;
+  cursor: pointer;
 }
 .sign_padding {
   padding: 30px 87px 0;
@@ -544,7 +544,8 @@ a {
   width: 100%;
   position: relative;
 }
-.winpop_form li input {
+.winpop_form li input[type="text"],
+.winpop_form li input[type="password"] {
   width: 97%;
   padding: 0 0 0 3%;
   height: 40px;
