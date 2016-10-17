@@ -335,7 +335,7 @@ a {
 }
 .this_winpop {
     width: 420px;
-    height: 270px;
+    min-height: 370px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -375,7 +375,7 @@ a {
         line-height: 40px;
         background: @color;
         font-size: 18px;
-        margin: 15px auto 0;
+        margin: 0 auto;
     }
 }
 .search_box {
@@ -530,19 +530,6 @@ a {
                     border: 1px solid #d1d1d1;
                     width: 97%;
                 }
-                .code_btn {
-                    width: 98px;
-                    height: 32px;
-                    line-height: 32px;
-                    text-align: center;
-                    color: #fff;
-                    background-color: #e40d0d;
-                    font-size: 14px;
-                    position: absolute;
-                    right: 2px;
-                    top: 5px;
-                    display: block;
-                }
             }
         }
         .this_form_btn {
@@ -552,7 +539,57 @@ a {
         }
     }
 }
+.code_btn {
+    width: 98px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    background-color: #e40d0d;
+    font-size: 14px;
+    position: absolute;
+    right: 2px;
+    top: 5px;
+    display: block;
+}
 .sign_padding {
     padding: 30px 87px 0;
     overflow: hidden;
+}
+.winpop_form {
+    padding: 20px 40px;
+    li {
+        height: 50px;
+        float: left;
+        width: 100%;
+        position: relative;
+        input {
+            width: 97%;
+            padding: 0 0 0 3%;
+            height: 40px;
+            line-height: 40px;
+            background-color: #fff;
+            border: none;
+            font-size: 14px;
+            color: #333;
+        }
+    }
+    .winpop_btn_box{
+        padding-top: 10px;
+        clear: both;
+        text-align: center;
+        a{
+            display: inline-block;
+            text-align: center;
+            background-color: @color;
+            color: #fff;
+            font-size: 14px;
+            height: 40px;
+            line-height: 40px;
+            width: 80px;
+            &.cancel_btn{
+                margin-left: 20px;
+            }
+        }
+    }
 }
