@@ -156,10 +156,11 @@ a {
         *zoom: 1;
         width: 80px;
         height: 26px;
-        line-height: 26px;
         background-color: #fce07c;
+        border: none;
         color: @color;
         .radius(3px);
+        cursor: pointer;
         margin-top: 10px;
     }
     .menu {
@@ -173,6 +174,18 @@ a {
                 display: block;
                 &.active,
                 &:hover {
+                    background-color: #da9f1e;
+                }
+            }
+            input[type="button"],input[type="submit"]{
+                width: 100%;
+                height: 45px;
+                color: #fff;
+                font-size: 16px;
+                cursor: pointer;
+                border: none;
+                background-color: @color;
+                &:hover{
                     background-color: #da9f1e;
                 }
             }
@@ -367,15 +380,16 @@ a {
         }
     }
     .winpop_btn {
+        border: none;
         display: block;
         text-align: center;
         color: #fff;
         width: 160px;
         height: 40px;
-        line-height: 40px;
         background: @color;
         font-size: 18px;
         margin: 0 auto;
+        cursor: pointer;
     }
 }
 .search_box {
@@ -586,6 +600,20 @@ a {
             height: 40px;
             line-height: 40px;
             width: 80px;
+            &.cancel_btn{
+                margin-left: 20px;
+            }
+        }
+        input[type="button"],input[type="submit"]{
+            display: inline-block;
+            text-align: center;
+            background-color: @color;
+            border: none;
+            color: #fff;
+            font-size: 14px;
+            height: 40px;
+            width: 80px;
+            cursor: pointer;
             &.cancel_btn{
                 margin-left: 20px;
             }
