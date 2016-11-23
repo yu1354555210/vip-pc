@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="renderer" content="webkit">
+		<title>会员系统</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<!--[if lte IE 6]>
+			<script type="text/javascript" src="js/png.js"></script>
+			<script>
+				DD_belatedPNG.fix('img,a,div,li');
+			</script>
+		<![endif]-->
+		<style type="text/css">
+			.form_login_box{background: url(img/login_bg2.jpg) no-repeat center top;height: 694px;}
+			.login_box{margin: 100px 0 0 730px;}
+			.login_winpop{background-image: url(img/winpop_bg2.png);border-color: #debd68;}
+			.login_other a.sign_href{color: #e40d0d;}
+			.form_bg .footer{color: #fff;position: static;}
+			#kefu{width: 120px;height: auto;position: absolute;top: 300px;right: 1px;z-index: 8888;background: #fff;border: 1px solid #d1d1d1;border-top: 2px solid #ca2d25;display: none;padding-bottom: 5px;}
+			#kefu .top{width: 100%;height: 35px;line-height: 35px;font-family: "Microsoft YaHei";font-size: 14px;color: #333;font-weight: bold;text-align: center;}
+			#kefu .middle{font-size: 12px;width: 100%;text-align: center;}
+			#kefu .middle p{color: #991C0A;}
+			#kefu .close{float: right;margin-right: 10px;margin-top: 10px;cursor: pointer;}
+			.right_bar{width: 50px;height: 157px;position: absolute;top: 300px;right: 1px;z-index: 9999;}
+			.right_bar img{cursor: pointer;}
+		</style>
+	</head>
+
+	<body class="form_bg">
+		<div class="wrapper">
+			<div class="form_box form_login_box">
+				<div class="login_box">
+					<div class="login_tit">会员登录</div>
+					<div class="login_winpop form_winpop">
+						<div class="login_padding">
+							<ul>
+								<li>
+									<i class="user_icon"></i>
+									<input type="text" placeholder="请输入交易商ID" name="" id="" value="" />
+								</li>
+								<li>
+									<i class="pwd_icon"></i>
+									<input type="password" placeholder="请输入密码" name="" id="" value="" />
+								</li>
+							</ul>
+							<input type="button" class="this_form_btn" value="登  录"></input>
+							<div class="login_other">
+								<a href="#">忘记密码？</a> 没有账户，
+								<a href="#" class="sign_href">立即注册</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="kefu">
+					<div class="top">
+						<img src="img/close.gif" class="close"/>在线客服
+					</div>
+					<div class="middle">
+						<a target="_blank" href="http://wpa.qq.com/msgrd@v=3&uin=123456&site=qq&menu=yes"><img src="img/qq.png" /></a><br />
+						<a target="_blank" href="http://wpa.qq.com/msgrd@v=3&uin=123456&site=qq&menu=yes"><img src="img/qq.png" /></a><br />
+						<a target="_blank" href="http://wpa.qq.com/msgrd@v=3&uin=123456&site=qq&menu=yes"><img src="img/qq.png" /></a><br />
+						<a target="_blank" href="http://wpa.qq.com/msgrd@v=3&uin=123456&site=qq&menu=yes"><img src="img/qq.png" /></a><br />
+					</div>
+				</div>
+				<div class="right_bar">
+					<img src="img/online_btn.png" />
+				</div>
+			</div>
+			<div class="footer">版权所有 上文申江7588号段 众诚财富计划 2016-2017</div>
+		</div>
+
+
+		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/jquery-placeholder/2.3.1/jquery.placeholder.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('input, textarea').placeholder();
+				
+				$('.right_bar').click(function(){
+					$(this).hide();
+					$('#kefu').show();
+				});
+				$('#kefu .close').click(function(){
+					$('.right_bar').show();
+					$('#kefu').hide();
+				});
+
+			});
+		</script>
+	</body>
+
+</html>
